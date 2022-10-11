@@ -183,12 +183,13 @@ body {
 
 .header-item-mail,
 .header-item-tel {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
 
-  display: block;
   transition: color var(--transition-time) var(--transition-function);
 }
 
