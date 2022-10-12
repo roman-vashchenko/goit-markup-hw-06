@@ -233,6 +233,7 @@ body {
   text-transform: uppercase;
   color: var(--secondary-color);
 }
+
 .hero-btn {
   display: block;
   padding-top: 10px;
@@ -240,7 +241,7 @@ body {
   min-width: 216px;
   margin: 0 auto;
   border-radius: 4px;
-  border-color: var(--accent-color);
+  border-color: transparent;
 
   font-family: inherit;
   font-weight: 700;
@@ -249,13 +250,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-color);
   background: var(--accent-color);
-  transition: background-color var(--transition-time) var(--transition-function);
+  transition: background-color var(--transition-time) var(--transition-function), box-shadow var(--transition-time) var(--transition-function);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--secondary-color);
   background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features */
@@ -606,6 +607,8 @@ body {
   min-width: 528px;
   min-height: 581px;
   padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-time) var(--transition-function);
@@ -633,7 +636,7 @@ body {
   width: 448px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
+  margin-top: 51px;
 }
 
 .title-form {
@@ -654,7 +657,6 @@ body {
 }
 
 .form-field input {
-  padding: 4px;
   margin: 0;
 }
 
@@ -681,7 +683,7 @@ body {
   min-width: 200px;
   margin: 0 auto;
   border-radius: 4px;
-  border-color: var(--accent-color);
+  border-color: transparent;
 
   font-family: inherit;
   font-weight: 700;
@@ -690,8 +692,15 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-color);
   background: var(--accent-color);
-  transition: background-color var(--transition-time) var(--transition-function);
+  transition: background-color var(--transition-time) var(--transition-function), box-shadow var(--transition-time) var(--transition-function);
 }
+
+.btn-submit-form:hover,
+.btn-submit-form:focus {
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ background-color: #188ce8;
+}
+
 
 
 
