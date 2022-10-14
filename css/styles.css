@@ -605,7 +605,6 @@ body {
 
   min-width: 528px;
   min-height: 581px;
-  /* padding: 8px; */
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary-color);
@@ -629,13 +628,16 @@ body {
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--secondary-color);
+  transition: fill var(--transition-time) var(--transition-function);
 }
 
+.btn-modal-close:hover {
+  fill: var(--accent-color);
+}
+
+
 .your-data-form {
-  width: 448px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+  padding: 40px 41px 39px;
 }
 
 .title-form {
@@ -649,12 +651,41 @@ body {
   color: var(--title-text-color);
 }
 
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
 .form-field input {
   margin: 0;
-  padding: 0;
+  padding: 11px 0;
+  padding-left: 35px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: border-color var(--transition-time) var(--transition-function);
 }
+
+.form-field:focus-within {
+  fill: var(--accent-color);
+}
+
+.form-field input[type="text"]:focus-within,
+.form-field input[type="tel"]:focus-within,
+.form-field input[type="email"]:focus-within {
+  border-color: var(--accent-color);
+}
+
+.icon-form {
+ position: absolute;
+ top: 29px;
+ left: 12px;
+}
+
 
 .form-field label {
   margin-bottom: 4px;
@@ -666,11 +697,6 @@ body {
   color: var(--text-color);
 }
 
-.form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
 
 .form-comment {
   display: flex;
@@ -680,12 +706,19 @@ body {
 
 .form-comment textarea {
   padding: 12px 16px;
+  height: 138px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+}
+
+.form-comment textarea:focus-within {
+  border-color: var(--accent-color);
 }
 
 .form-comment label {
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
