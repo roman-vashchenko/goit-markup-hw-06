@@ -586,7 +586,7 @@ body {
   padding: 15px 16px;
   color: var(--secondary-color);
   background-color: #2f303a;
-  outline: none;
+  outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -680,7 +680,8 @@ body {
   transition: fill var(--transition-time) var(--transition-function);
 }
 
-.btn-modal-close:hover {
+.btn-modal-close:hover,
+.btn-modal-close:focus {
   fill: var(--accent-color);
 }
 
@@ -707,32 +708,6 @@ body {
   transition: fill var(--transition-time) var(--transition-function);
 }
 
-.form-field input {
-  margin: 0;
-  padding: 12px 0;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
-  transition: border-color var(--transition-time) var(--transition-function);
-}
-
-.form-field:focus-within {
-  fill: var(--accent-color);
-}
-
-.form-field input[type="text"]:focus-within,
-.form-field input[type="tel"]:focus-within,
-.form-field input[type="email"]:focus-within {
-  border-color: var(--accent-color);
-}
-
-.icon-form {
-  position: absolute;
-  top: 29px;
-  left: 12px;
-}
-
 .form-field label {
   margin-bottom: 4px;
 
@@ -743,23 +718,34 @@ body {
   color: var(--text-color);
 }
 
+.icon-form {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 12px 0;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color var(--transition-time) var(--transition-function);
+}
+
+.form-field:focus-within,
+.form-field input[type="text"]:focus-within,
+.form-field input[type="tel"]:focus-within,
+.form-field input[type="email"]:focus-within {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .form-comment {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-}
-
-.form-comment textarea {
-  padding: 12px 16px;
-  height: 138px;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
-}
-
-.form-comment textarea:focus-within {
-  border-color: var(--accent-color);
 }
 
 .form-comment label {
@@ -769,6 +755,20 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--text-color);
+}
+
+.form-comment textarea {
+  padding: 12px 16px;
+  height: 138px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color var(--transition-time) var(--transition-function);
+}
+
+.form-comment textarea:focus-within {
+  border-color: var(--accent-color);
 }
 
 .form-comment textarea::placeholder {
@@ -781,9 +781,7 @@ body {
 
 .form-contract-condition {
   margin-bottom: 30px;
-  width: 423px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .form-contract-condition label {
