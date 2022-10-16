@@ -594,6 +594,7 @@ body {
 
 .icon-send {
   margin-left: 10px;
+  fill: var(--secondary-color);
 }
 
 .form-subscribe::placeholder {
@@ -686,7 +687,7 @@ body {
 }
 
 .your-data-form {
-  padding: 40px 41px 39px;
+  padding: 51px 40px 29px;
 }
 
 .title-form {
@@ -718,11 +719,13 @@ body {
   color: var(--text-color);
 }
 
+
 .icon-form {
   position: absolute;
-  top: 29px;
-  left: 12px;
+  top: 50%;
+  left: 15px;
 }
+
 
 .form-field input {
   margin: 0;
@@ -741,6 +744,7 @@ body {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
+
 
 .form-comment {
   display: flex;
@@ -795,6 +799,10 @@ body {
 .form-contract-condition .contract {
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.icon-check {
+  fill: #000000;
 }
 
 .btn-submit-form {
