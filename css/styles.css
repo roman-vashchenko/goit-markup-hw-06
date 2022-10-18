@@ -790,13 +790,18 @@ body {
   appearance: none;
 }
 
+
 .form-contract-condition label {
   display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 
 .border-icon {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   margin-right: 7px;
   width: 16px;
@@ -804,8 +809,13 @@ body {
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
   transition: background-color var(--transition-time) var(--transition-function), border-color var(--transition-time) var(--transition-function);
-  
 }
+
+.icon-check {
+  opacity: 0;
+  transition: opacity var(--transition-time) var(--transition-function);
+}
+
 
 .checkbox:checked + label .border-icon {
   background-color: var(--accent-color);
@@ -815,19 +825,6 @@ body {
 .checkbox:checked + label .icon-check {
   opacity: 1;
   border-radius: 2px;
-}
-
-.form-contract-condition label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-
-.icon-check {
-  opacity: 0;
-  transition: opacity var(--transition-time) var(--transition-function);
 }
 
 .form-contract-condition .contract {
