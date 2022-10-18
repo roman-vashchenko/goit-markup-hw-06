@@ -726,9 +726,9 @@ body {
 }
 
 .form-field input {
+  width: 100%;
   margin: 0;
-  padding: 12px 0;
-  padding-left: 42px;
+  padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -757,6 +757,7 @@ body {
 }
 
 .form-comment textarea {
+  width: 100%;
   resize: none;
   padding: 12px 16px;
   height: 138px;
@@ -783,6 +784,39 @@ body {
   text-align: center;
 }
 
+.form-contract-condition > .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-contract-condition label {
+  display: inline-block;
+}
+
+.border-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+  transition: background-color var(--transition-time) var(--transition-function), border-color var(--transition-time) var(--transition-function);
+  
+}
+
+.checkbox:checked + label .border-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox:checked + label .icon-check {
+  opacity: 1;
+  border-radius: 2px;
+}
+
 .form-contract-condition label {
   font-weight: 400;
   font-size: 14px;
@@ -791,13 +825,14 @@ body {
   color: var(--text-color);
 }
 
+.icon-check {
+  opacity: 0;
+  transition: opacity var(--transition-time) var(--transition-function);
+}
+
 .form-contract-condition .contract {
   text-decoration: underline;
   color: var(--accent-color);
-}
-
-.icon-check {
-  fill: #000000;
 }
 
 .btn-submit-form {
