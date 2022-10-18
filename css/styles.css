@@ -738,13 +738,10 @@ body {
 }
 
 .form-field:focus-within,
-.form-field input[type="text"]:focus-within,
-.form-field input[type="tel"]:focus-within,
-.form-field input[type="email"]:focus-within {
+.form-field input:focus-within {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-
 
 .form-comment {
   display: flex;
