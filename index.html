@@ -198,7 +198,7 @@
           <p class="title-form">Залиште свої дані, ми вам передзвонимо</p>
           <div class="form-field">
             <label for="user-name">Ім'я</label>
-            <input class="form-field-name" type="text" class="text" name="user-name" id="user-name">
+            <input type="text" class="text" name="user-name" id="user-name">
             <svg class="icon-form" width="18" height="18">
               <use href="./images/icons.svg#icon-name"></use>
             </svg>
@@ -206,7 +206,7 @@
 
           <div class="form-field">
             <label for="phone-number">Телефон</label>
-            <input type="tel" class="text-form"  name="phone-number" id="phone-number">
+            <input type="tel" name="phone-number" id="phone-number">
             <svg class="icon-form" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -226,7 +226,13 @@
           </div>
           <div class="form-contract-condition">
             <input class="checkbox" type="checkbox" name="contract-condition" id="accept">
-            <label for="accept"><span class="border-icon" ><svg class="icon-check" width="16" height="15"><use href="./images/icons.svg#icon-check"></use></svg></span>Погоджуюся з розсилкою та приймаю <a class="contract" href="">Умови договору</a></label>
+            <label for="accept">
+                <span class="border-icon" >
+                  <svg class="icon-check" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>Погоджуюся з розсилкою та приймаю <a class="contract" href="">Умови договору</a>
+            </label>
           </div>
           <button class="btn-submit-form" type="submit">Відправити</button>
         </form>

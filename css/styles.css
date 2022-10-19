@@ -801,6 +801,9 @@ body {
 }
 
 .border-icon {
+  position: relative;
+  top: 2px;
+  left: 0;
   display: inline-flex;
   align-items: center;
   margin-right: 7px;
