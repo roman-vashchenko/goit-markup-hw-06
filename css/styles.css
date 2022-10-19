@@ -788,8 +788,9 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
 
+  position: absolute;
+}
 
 .form-contract-condition label {
   display: inline-block;
@@ -819,7 +820,6 @@ body {
   transition: opacity var(--transition-time) var(--transition-function);
 }
 
-
 .checkbox:checked + label .border-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -827,7 +827,6 @@ body {
 
 .checkbox:checked + label .icon-check {
   opacity: 1;
-  border-radius: 2px;
 }
 
 .form-contract-condition .contract {
