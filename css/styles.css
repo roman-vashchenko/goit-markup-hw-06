@@ -706,7 +706,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  transition: fill var(--transition-time) var(--transition-function);
 }
 
 .form-field label {
@@ -723,6 +722,7 @@ body {
   position: absolute;
   top: 50%;
   left: 15px;
+  transition: fill var(--transition-time) var(--transition-function);
 }
 
 .form-field input {
