@@ -837,6 +837,7 @@ body {
  outline: transparent;
 }
 
+
 .form-contract-condition .contract {
   text-decoration: underline;
   color: var(--accent-color);
