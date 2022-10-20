@@ -830,7 +830,11 @@ body {
 }
 
 .checkbox:focus + label .border-icon {
-  outline: 1px solid var(--title-text-color);
+ outline: 1px solid var(--title-text-color);
+}
+
+.checkbox:checked:focus + label .border-icon {
+ outline: transparent;
 }
 
 .form-contract-condition .contract {
